@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { AppBar, Box, Typography } from '@mui/material'
 import React from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -8,7 +8,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Footer = () => {
   return (
     <div>
-      <Box sx={{textAlign:'center', bgcolor:'black', color: 'white', p:2}} >
+      
+      <AppBar position='bottom' sx={{textAlign:'center', bgcolor:'black', color: 'white', p:2}} >
         <Box sx={{my: 2, 
             "& svg":{ 
                 fontSize:"40PX",
@@ -27,7 +28,7 @@ const Footer = () => {
         <Typography variant='h6'>
             All Rights Reserved &copy; ICT Academy
         </Typography>
-      </Box>
+      </AppBar>
     </div>
   )
 }
